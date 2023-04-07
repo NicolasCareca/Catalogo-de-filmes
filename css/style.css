@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    min-height: 100vh;
+    justify-content: center;
+  }
+  
+  
+  #lista-filmes {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .card {
+    width: 20vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.2s ;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+    margin: 0.5em;
+  }
+  
+  .card p {
+    font-size: 0.8rem;
+    margin: 0.5em;
+  }
+  
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin: 1em;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  
+  #mostrar-filmes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  
+  #mostrar-filmes .detalhes-filme {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+  }
+  
+  
+  #mostrar-filmes .fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #mostrar-filmes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #mostrar-filmes img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  #mostrar-filmes p {
+    margin-bottom: 10px;
+  }
+  
+    @media screen and (max-width: 768px) {
+      .card {
+        width: 45%;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .card {
+        width: 90%;
+      }
+    }
